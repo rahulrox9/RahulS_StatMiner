@@ -25,7 +25,7 @@ pip install -r requirements.txt
 Create a virtual environment and activate it:
 ``` python
 python -m venv statminer_env
-
+```
 # Windows
 ```
 statminer_env\Scripts\activate
@@ -37,8 +37,11 @@ source statminer_env/bin/activate
 ```
 
 Then install dependencies:
-% pip install --upgrade pip
-% pip install -r requirements.txt
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
 %
 % ## Files
 % - README.md          : Project documentation
