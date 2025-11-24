@@ -33,11 +33,11 @@ pip install -r requirements.txt
 python -m venv statminer_env
 ```
 #### Activate the environment:
-** Windows **
+** Windows
 ```
 statminer_env\Scripts\activate
 ```
-** Linux/macOS **
+** Linux/macOS
 ```
 source statminer_env/bin/activate
 ```
