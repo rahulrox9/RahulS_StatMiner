@@ -12,37 +12,42 @@ git clone https://github.com/rahulrox9/StatMiner.git
 cd StatMiner
 ```
 
-### 2. Using Conda
-Create and activate a dedicated environment:
+### 2A. Using Conda
+#### Create and activate a dedicated environment:
 ``` conda
 conda create -n statminer_env python=3.11
 conda activate statminer_env
-pip install --upgrade pip
+```
+#### Make sure `pip` is available:
+``` conda
+python -m ensurepip --upgrade
+```
+#### Now install dependencies:
+``` conda
 pip install -r requirements.txt
 ```
 
-### 3. Using standard Python (venv)
-Create a virtual environment and activate it:
+### 2B. Using standard Python (venv)
+#### Create a virtual environment and activate it:
 ``` python
 python -m venv statminer_env
 ```
-Windows
+#### Activate the environment:
+** Windows **
 ```
 statminer_env\Scripts\activate
 ```
-
-Linux/macOS
+** Linux/macOS **
 ```
 source statminer_env/bin/activate
 ```
-
-Then install dependencies:
-```
+#### Then ensure `pip` is up to date and install dependencies: 
+```bash
+python -m ensurepip --upgrade
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-%
 % ## Files
 % - README.md          : Project documentation
 % - requirements.txt   : Python dependencies
